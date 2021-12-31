@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #D7DBDD ;
+}
+
+
+.complete{
+    width: 450px;
+    height: 35px;
+    margin-left: 34%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background:linear-gradient(to top , #02333c , #0b7685 , rgba(24, 212, 212, 0.692));
+    outline: none;
+}
+.complete:hover{
+    width: 500px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 33%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.complete a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}

@@ -1,0 +1,30 @@
+
+.parent{
+    margin-bottom: 20px;
+}
+.navbar{
+    background:linear-gradient(to left , rgb(13, 107, 76) , aqua);
+    color: white;
+    margin-bottom: 20px;
+    overflow: auto;
+    
+}
+
+.navbar li a img{
+    width: 50px;
+}
+
+.parentlaw{
+    margin: 50px 0;
+}
+
+.parentsport{
+    margin: 50px 0;
+}
+
+.hr{
+    width: 40%;
+    background-color: red;
+    height: 4px;
+    margin: 15px auto;
+}

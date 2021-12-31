@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cart</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style css/styel.css">
+    </head>
+    <body>
+
+        <div class="navs">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#data">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#delivery">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#payment">payment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#submit">Submit</a>
+            </li>
+          </ul>
+        </div>
+        
+
+        <div class="parent">
+
+          <div class="data" id="data">
+            <p style="font-weight: bold;">1.Register your details</p>
+            <hr color="aqua"  style="margin-left: -8px;">
+            
+            <label for="" class="lab">Your Name</label>
+            <input type="text" class="inp" placeholder="Full name">
+    
+            <label for="" class="lab">Your e-mail</label>
+            <input type="email" class="inp" placeholder="****@gmail.com">
+
+            <label for="" class="lab">Your Phone Number</label>
+            <input type="text" class="inp" placeholder="01****">
+            
+          </div>
+
+          <div class="delivery" id="delivery">
+            <p>2.Delivery method</p>
+            <hr color="aqua"  style="margin-left: -8px;">
+
+            <input type="radio" name="d" id="" value="" onclick="address()">
+            <label for="">Delivery to your door</label>
+            <img src="./image/delivery.jpg" alt="" class="ig">
+            <br>
+            <input type="radio" name="d" id="" value="" onclick="station()">
+            <label for="">Receiving station</label>
+            
+            <div class="address" id="address">
+
+                <label for="" class="lab">Governorate</label>
+                <input type="text" name="" id="" class="inp">
+
+                <label for="" class="lab">City</label>
+                <input type="text" name="" id="" class="inp">
+
+                <label for="" class="lab">Street name</label>
+                <input type="text" class="inp">
+
+                <label for="" class="lab">Realty name</label>
+                <input type="text" class="inp">
+                
+            </div>
+
+            <div class="station" id="station">
+                <input type="radio" name="s" id="">
+                <label for="">giza</label>
+                <br>
+                <input type="radio" name="s" id="">
+                <label for="">alharam</label>
+                <br>
+                <input type="radio" name="s" id="">
+                <label for="">6October</label>
+            </div>
+
+          </div>
+
+          <div class="payment" id="payment">
+            <p>3.Payment method</p>
+            <hr color="aqua"  style="margin-left: -8px;">
+
+            <input type="radio" name="p" id="" onclick="cash()">
+            <label for="" >Cash</label>
+            <br>
+
+            <input type="radio" name="p" id="" onclick="visa()">
+            <label for="" >master card</label>
+            <img src="./image/visa.jpg" alt="" class="im">
+            <br>
+            <input type="radio" name="p" id="" onclick="fawry()">
+            <label for="">pay with fawry</label>
+            <img src="./image/fawry.jpg" alt="" class="imf">
+
+            <div class="visa" id="visa">
+                <label for="" class="lab">Card number</label>
+                <input type="number" name="" id="" class="inp">
+
+                <label for="" class="lab">Expiration</label>
+                <input type="date" name="" id="" class="inp">
+
+                <label for="" class="lab">Security code</label>
+                <input type="number" name="" id="" class="inp">
+            </div>
+
+            <div class="fawry" id="fawry">
+                <label for="" class="lab">e-mail</label>
+                <input type="email" name="" id=""  class="inp" placeholder="****@gmail.com">
+            </div>
+
+          </div>
+
+          <div id="submit">
+             <input type="submit" name="" id="" class="sub">
+          </div>
+        </div>
+
+
+        <script>
+
+            function address(){
+                document.getElementById('address').style.display="block"
+                document.getElementById('station').style.display="none"
+            }
+
+            function station(){
+                document.getElementById('address').style.display="none"
+                document.getElementById('station').style.display="block"
+            }
+
+            function visa(){
+                document.getElementById('visa').style.display="block"
+                document.getElementById('fawry').style.display="none"
+            }
+
+            function fawry(){
+                document.getElementById('visa').style.display="none"
+                document.getElementById('fawry').style.display="block"
+            }
+            function cash(){
+                document.getElementById('visa').style.display="none"
+                document.getElementById('fawry').style.display="none"
+            }
+        </script>
+
+    </body>
+</html>
